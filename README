@@ -1,0 +1,37 @@
+# Retail Sales Intelligence — SQL + Power BI
+
+## Live dashboard → [Click here to view](YOUR_POWERBI_LINK)
+
+## Project overview
+End-to-end data analysis pipeline for a Brazilian e-commerce platform
+with 100,000+ real orders. Raw CSV data → PostgreSQL (Supabase) →
+12 analytical SQL queries → live Power BI dashboard.
+
+## Tech stack
+- Database: PostgreSQL (Supabase)
+- BI tool: Microsoft Power BI Desktop
+- SQL: Window functions, CTEs, multi-table JOINs
+- Dataset: Olist Brazilian E-Commerce (Kaggle)
+
+## Key business insights found
+1. São Paulo accounts for 42% of total revenue but has the
+   2nd highest delivery delay — a logistics risk.
+2. Sellers with avg review score below 3.5 generate 18% of
+   revenue but 61% of customer complaints.
+3. Credit card orders have 2.3x higher avg order value than
+   boleto (bank slip) payments.
+
+## SQL techniques demonstrated
+- Window functions: LAG(), RANK(), PERCENT_RANK()
+- CTEs for multi-step aggregations
+- Date arithmetic for delivery delay analysis
+- Multi-table JOINs across 5 related tables
+## Dashboard screenshots
+[screenshot 1 here] [screenshot 2 here]
+
+## How to run locally
+1. Clone this repo
+2. Create a Supabase project and run sql/create_tables.sql
+3. Import CSVs from /data folder
+4. Open dashboard/retail_sales.pbix in Power BI Desktop
+5. Update connection string in Transform Data → Source
